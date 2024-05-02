@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>guessing game</title>
+</head>
+<body>
+  <script>
+let random = Math.floor(Math.random()*100)+1;
+console.log(random)
+
+let guess = prompt("guess random number");
+while(true){
+  if(guess=="quit"){
+  console.log("you should quit the game");
+  break;
+}
+ if(guess==random){
+  console.log("you guess the wright number");
+  break;
+ 
+}else if(guess < random){
+ guess = prompt("hint:you guess the small number! try again");
+}else{
+  guess = prompt("your answer is wrong pls guess again dude!")
+
+}
+}
+
+
+
+
+  </script>
+</body>
+</html>
